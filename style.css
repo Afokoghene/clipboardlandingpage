@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+/* <i class="fa-brands fa-square-facebook"></i> */
+/* <i class="fa-brands fa-twitter"></i> */
+/* <i class="fa-brands fa-instagram"></i> */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: hsl(210, 10%, 33%);
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.8;
+    max-width: 1440px;
+    text-align: center;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 8rem;
+}
+
+main header h1 {
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    gap: 7rem;
+}
+
+
+.main__header img {
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__header .quote {
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+.download {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.7rem 2.8rem;
+    color: #fff;
+    font-size: 20px;
+}
+
+.mac__btn {
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 2rem;
+}
+
+.ios__btn {
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 2rem;
+}
+
+.part2 .quote2 {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+}
+
+.part3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 10rem;
+}
+
+.mid .mid__text {
+    text-align: left;
+}
+
+
+.part3 figure img {
+    margin-left: -1.9rem;
+}
+
+.part4 {
+    display: grid;
+    gap: 3rem;
+}
+
+.part4 header p {
+    padding-top: 1rem;
+    max-width: 60%;
+    align-self: center;
+}
+
+.part4 div p {
+    padding-top: 1rem;
+}   
+
+.part4 figure img {
+    max-width: 100%;
+}
+
+.part5 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.part5__in {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.part6 {
+    margin: 0 auto;
+    display: grid;
+    gap: 6.5rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.part7 {
+    display: grid;
+    gap: 1rem;
+}
+
+.part7 p {
+    max-width: 60%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #ddd;
+}
+
+.eight__one {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.eight figure img {
+    width: 50px;
+    height: 50px;
+}
+
+.eight__one-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.eight__one-in a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.eight__two {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.attribution {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 15px;
+    }
+
+    .main__header .quote {
+        max-width: 100%;
+    }
+
+    .download {
+        grid-template-columns: none;
+        gap: 2.5rem;
+    }
+
+    .part2 .quote2 {
+        max-width: none;
+    }
+    .part2 h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .part3 {
+        display: grid;
+        grid-template-columns: none;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-right: 0;
+    }
+    
+    .mid .mid__text {
+        text-align: center;
+    }
+    
+    
+    .part3 figure img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .part4 header p {
+        max-width: none;
+        align-self: none;
+    }
+
+    .part5 {
+        grid-template-columns: none;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 2.5rem;
+    }
+
+    .part6 {
+        margin: 0 auto;
+        gap: 4rem;
+        grid-template-columns: none;
+    }
+    
+    .part7 p {
+        max-width: none;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .eight {
+        margin: 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        display: grid;
+        grid-template-columns: none;
+        gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .eight__one-in a {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .eight__two i {
+        padding-top: 1rem;
+    }
+
+    .eight__one {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .eight__two {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+}    
